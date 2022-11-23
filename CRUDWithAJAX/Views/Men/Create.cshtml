@@ -1,0 +1,26 @@
+﻿@model CRUDWithAJAX.Models.Men
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = null;
+}
+
+<div class="row">
+    <div class="col-md-12">
+            <div class="form-group">
+                <label class="control-label">Name</label>
+                <input id="name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Age</label>
+                <input id="age" type="number" class="form-control" />
+            </div>
+            <div class="form-group col-md-4 mt-4">
+                <a class="btn btn-primary" onclick="SaveMen()">Save</a>
+            </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

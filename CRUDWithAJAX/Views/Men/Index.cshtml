@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CRUDWithAJAX.Models.Men>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a onclick="showInPopup('@Url.Action("Create","Men",null,Context.Request.Scheme)')"
+        class="btn btn-primary">Create New</a>
+</p>
+
+<div class="mt-4">
+    <input type="search" class="searchbar" placeholder="Search" id="Search" />
+</div>
+
+<table class="table mt-4 tbll" id="tbll">
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Age
+        </th>
+    </tr>
+</table>
+
+@*
+<td>
+    <a class="btn btn-outline-primary" onclick="EditeMan(@item.Id)">Edit</a>
+
+    <a onclick="ManDetails(@item.Id)" class="btn btn-outline-primary">Details</a>
+
+    <a data-id="@item.Id"
+       class="btn btn-outline-danger dltbtn">Delete</a>
+</td>*@

@@ -1,0 +1,29 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+i{
+    font-size:38px;
+    color:lightskyblue;
+}
+
+#test{
+    font-size:20px;
+    margin-left:10px;
+    font-weight:bold;
+}
